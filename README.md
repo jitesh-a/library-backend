@@ -1,12 +1,12 @@
 ## Library Backend
 
 ### Tech stack
-Node.js
-Mongoose
-Express
-Jest
-Supertest
+1. Node.js
+2. Mongoose
+3. Express
+4. Jest
+5. Supertest
 
 ### Quick setup
-npm install
-npm run start
+1. npm install
+2. npm run start
