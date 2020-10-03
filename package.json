@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "node ./bin/www",
     "lint": "eslint --ext .js ./ --report-unused-disable-directives --color",
     "lint-fix": "eslint --fix",
     "test": "jest"
