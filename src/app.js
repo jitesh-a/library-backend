@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const helmet = require('helmet');
 
 const errorHandler = require('./utils/error-handler');
 const indexRouter = require('./routes/index');
@@ -13,6 +14,7 @@ const setupMongoose = require('./utils/setup-mongoose');
 let app = express();
 setupMongoose();
 app.use(logger('dev'));
+app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
