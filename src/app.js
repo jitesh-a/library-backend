@@ -11,7 +11,7 @@ const booksRouter = require('./routes/books');
 const setupSwagger = require('./utils/setup-swagger');
 const setupMongoose = require('./utils/setup-mongoose');
 
-let app = express();
+const app = express();
 setupMongoose();
 app.use(logger('dev'));
 app.use(helmet());
